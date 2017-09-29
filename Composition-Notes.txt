@@ -1,0 +1,52 @@
+# Compositional programming
+
+Promises, challenges, limitations
+
+<http://www.dagstuhl.de/12511/>
+
+---
+
+# Abstract
+
+This talk surveys the evolution of compositional paradigms in programming from the 1950s through to the present day.  In particular, we explore the innovations introdiced by procedural programming, object-oriented langauges, component-based development, and model-driven engineering.
+
+---
+
+## Early history
+- subroutines, libraries, modules
+
+## OOP
+- ADTs
+- objects, classes, inheritance
+- incremental reuse
+- objects and concurrency
+- white box frameworks
+- patterns
+
+## Components
+- components, black box frameworks
+- scripting, DSLs, Piccola
+- software product lines
+- plugin architectures
+- SOA
+
+## Fine-grained adaptation
+- reflection, MOPs, Mirrors
+- AOP
+- Dependency injection
+- COP
+
+## Features
+- Flavors, Mixins
+- Traits, Talents
+- features, FOP
+- Generative programming (template metaprogramming)
+- Subject Oriented Programming etc
+
+## Models
+- MDD
+
+## Miscellaneous
+- composing tests
+- reasoning, contracts ...
+

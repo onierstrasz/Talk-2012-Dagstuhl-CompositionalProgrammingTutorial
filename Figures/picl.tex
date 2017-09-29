@@ -1,0 +1,49 @@
+\documentclass[12pt]{amsart}
+\usepackage{geometry}                % See geometry.pdf to learn the layout options. There are lots.
+\geometry{a4paper}                   % ... or a4paper or a5paper or ... 
+%\geometry{landscape}                % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}    % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\usepackage{prooftree}
+
+\begin{document}
+\thispagestyle{empty}
+\pagestyle{empty}
+
+% ----------------------------------------
+
+\newcommand{\ef}{\ensuremath{\epsilon}}
+\renewcommand{\root}[0]{\mbox{\textbf{R}}}
+\newcommand{\bind}[0]{{{\raisebox{.2ex}{\scriptsize$\mapsto$}}}}
+\newcommand{\hide}[1]{\mathit{hide}_{#1}}
+\newcommand{\inspect}[0]{\mbox{\textbf{L}}}
+\newcommand{\prl}[0]{~|~}
+\newcommand{\rulename}[1]{\textsf{\textit{#1}}}
+
+% ----------------------------------------
+% \section*{}
+\[
+\begin{array}{rcll}
+A,B,C
+&::=& \ef       & \rulename{empty form}\\
+&|& x\bind      & \rulename{bind}\\
+&|& x           & \rulename{variable}\\ 
+&|& A; B        & \rulename{sandbox}\\
+&|& \hide x     & \rulename{hide}\\
+&|& A \cdot B   & \rulename{extension}\\
+&|& \lambda x.A & \rulename{abstraction}\\
+&|& AB          & \rulename{application}\\
+&|& \root       & \rulename{current root}\\
+&|& \inspect    & \rulename{inspect}\\
+&|& A\prl B     & \rulename{parallel}\\
+&|& \nu c.A     & \rulename{restriction}\\
+&|& c?          & \rulename{input}\\
+&|& c           & \rulename{output}\\
+\end{array}
+\]
+\newpage
+% ----------------------------------------
+\end{document}
+
